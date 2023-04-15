@@ -11,7 +11,6 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function encodeLine(str) {
-function encodeLine(str) {
   let res = '';
   let count = 1;
   let currentChar = str[0];
@@ -24,7 +23,6 @@ function encodeLine(str) {
     }
   }
   return res;
-}
 }
 
 module.exports = {
