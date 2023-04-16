@@ -20,7 +20,7 @@ function repeater(str, options) {
   if (!("additionSeparator" in options)) options.additionSeparator='|'
   let additions=''
   if ("addition" in options){
-  additions=(options.addition+optionsdditionSeparator).repeat(options.additionRepeatTimes-1)+options.addition;}
+  additions=(options.addition+options.additionSeparator).repeat(options.additionRepeatTimes-1)+options.addition;}
   else {additions=options.additionSeparator.repeat(options.additionRepeatTimes-1)}
   return ((str+additions)+options.separator).repeat(options.repeatTimes-1)+(str+additions)
 }
