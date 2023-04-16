@@ -22,7 +22,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * }
  *
  */
-function getDNSStats(domains) {
+
  function getDNSStats(domains) {
   const dnsCounts = domains.reduce((acc, domain) => {
     const parts = domain.split('.').reverse();
@@ -35,7 +35,7 @@ function getDNSStats(domains) {
   }, {});
   return dnsCounts;
 }
-}
+
 
 module.exports = {
   getDNSStats
