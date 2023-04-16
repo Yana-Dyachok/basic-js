@@ -27,10 +27,12 @@ const chainMaker = {
       this.chain = [];
       throw new Error("You can't remove incorrect link!");
     }
-    return this.chain.splice(position - 1, 1);
+    this.chain.splice(position - 1, 1);
+    return this;
   },
   reverseChain() {
-    return this.chain.reverse();
+    this.chain.reverse();
+    return this;
   },
   finishChain() {
     const result = this.chain.join('~~');
@@ -38,6 +40,7 @@ const chainMaker = {
     return result;
   },
 };
+
 
 module.exports = {
   chainMaker
