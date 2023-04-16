@@ -19,7 +19,7 @@ class DepthCalculator {
   }
   currentDepth++;
   arr.forEach(item => {
-    calculate(item, currentDepth);
+    calculateDepth(item, currentDepth);
   });
   depth = Math.max(depth, currentDepth);
 }
